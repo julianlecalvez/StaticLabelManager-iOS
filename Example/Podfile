@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'StaticLabelManager', :exclusive => true do
+  pod "StaticLabelManager", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "StaticLabelManager", :path => "../"
+
+  pod 'Specta', :git => 'https://github.com/specta/specta.git', :tag => 'v0.3.0.beta1'
+  pod 'Expecta'
+end

@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Delegate/SLManagerDelegate.h

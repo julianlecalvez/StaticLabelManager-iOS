@@ -1,0 +1,28 @@
+PODS:
+  - Expecta (0.3.2)
+  - Specta (0.3.0.beta1)
+  - StaticLabelManager (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
+  - StaticLabelManager (from `../`)
+
+EXTERNAL SOURCES:
+  Specta:
+    :git: https://github.com/specta/specta.git
+    :tag: v0.3.0.beta1
+  StaticLabelManager:
+    :path: ../
+
+CHECKOUT OPTIONS:
+  Specta:
+    :git: https://github.com/specta/specta.git
+    :tag: v0.3.0.beta1
+
+SPEC CHECKSUMS:
+  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
+  Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
+  StaticLabelManager: 0897e7ac37d7421987fc9be143a0e9e0969974bb
+
+COCOAPODS: 0.35.0
