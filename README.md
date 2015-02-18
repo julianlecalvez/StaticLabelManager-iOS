@@ -90,7 +90,7 @@ When you pack and sunmit your application, a strong recommendation is to embbed 
 
 You can include it like a normal strings file by adding it from XCode, but it has to have the following name: *slm.strings*. 
 
-![image](https://raw.github.com/julianlecalvez/StaticLabelManager-iOS/assets/default-file-screenshot.png)
+![image](https://raw.githubusercontent.com/julianlecalvez/StaticLabelManager-iOS/master/assets/default-file-screenshot.png)
 
 
 ### 4. Use the labels in your application
