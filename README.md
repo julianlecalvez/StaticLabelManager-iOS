@@ -28,10 +28,9 @@ Let's go with the configuration. I tried to make it easy!
 
 
 
-## Installation
+## Installation with CocoaPods
 
-StaticLabelManager is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+StaticLabelManager is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
     pod "StaticLabelManager"
 
@@ -69,8 +68,10 @@ Our recommendation is to run the update at launch, from the *application:didFini
 	    // ...
 	    
 		// Setup SLM configuration
-    	[SLManager sharedManager].versionFileUrl =     	[NSURL URLWithString:@"http://www.julianlecalvez.com/static-label-manager/version.txt"];
-    	[SLManager sharedManager].labelsFileUrl = [NSURL URLWithString:@"http://www.julianlecalvez.com/static-label-manager/labels.strings"];
+    	[SLManager sharedManager].versionFileUrl = 
+    		[NSURL URLWithString:@"http://www.julianlecalvez.com/static-label-manager/version.txt"];
+    	[SLManager sharedManager].labelsFileUrl = 
+    		[NSURL URLWithString:@"http://www.julianlecalvez.com/static-label-manager/labels.strings"];
     	
     	// Run the update 
     	[manager update];
@@ -103,10 +104,6 @@ Just use the getter to retrieve the labels. The manager will automatically retri
 	// will return: My Awesome App !!
 
 
-## Advanced Configuration
-
-** in progress **
-
 ## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -115,12 +112,24 @@ The Example project is a simple use of the library. It provides a default label 
 
 During those updates, we run a loop to display a label value every seconds (by the time, the label changes after each update). 
 
+
+## Advanced Configuration
+
+StaticLabelManager provides an advanced configuration that can be use for specific needs. You can click on the following links to know more about it:
+
+- [Use the delegate to be notified when updates succeed or fail](https://github.com/julianlecalvez/StaticLabelManager-iOS/blob/master/AdvancedConfiguration.md#manager-delegate)
+- [Create a custom Downloader Adapter *(in progress)*](https://github.com/julianlecalvez/StaticLabelManager-iOS/blob/master/AdvancedConfiguration.md#create-custom-adapter)
+
+If you have another need, let me know, I may have am easy solution :) 
+
+
 ## Author
 
-Julian Le Calvez, www.julianlecalvez.com
+Julian Le Calvez, [www.julianlecalvez.com](http://www.julianlecalvez.com)
+
 
 ## License
 
-StaticLabelManager is available under the MIT license. See the LICENSE file for more info.
+StaticLabelManager is available under the MIT license. See the [LICENSE](https://github.com/julianlecalvez/StaticLabelManager-iOS/blob/master/LICENSE) file for more info.
 
 Copyright (c) 2015, Julian Le Calvez
