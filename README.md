@@ -89,7 +89,7 @@ Remember that the updates are done asynchronously, so you may have a delay befor
 
 When you pack and sunmit your application, a strong recommendation is to embbed a version of your label file inside the application bundle. 
 
-You can include it like a normal strings file by adding it from XCode, but it has to have the following name: *slm.strings*. 
+You can include it like a normal strings file by adding it from Xcode, but it has to have the following name: *slm.strings*. 
 
 ![image](https://raw.githubusercontent.com/julianlecalvez/StaticLabelManager-iOS/master/assets/default-file-screenshot.png)
 
